@@ -48,7 +48,7 @@ var myAppJavaScript = function($){
   // $ in this scope references the jQuery object we'll use.
   // Don't use jQuery, or jQuery191, use the dollar sign.
   // Do this and do that, using $.
-  $('body').append('<p>welcome to hello world soluship get the rates here</p><br>  ');
+  $('body').append('<p>welcome to hello world soluship get the rates here VIJAY</p><br>  ');
   
   alert("THANKS FOR INSTALLING SOLUSHIP SHOPIFY APP");
 };
