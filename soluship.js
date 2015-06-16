@@ -51,6 +51,8 @@ var myAppJavaScript = function($){
   $('body').append('<p>welcome to hello world soluship get the rates here VIJAY</p><br>  ');
   
   alert("THANKS FOR INSTALLING SOLUSHIP SHOPIFY APP");
+  
+  $( ".grid" ).append( "<p>sachin ramesh tendulkar</p>" );
 };
 
 /* If jQuery has not yet been loaded or if it has but it's too old for our needs,
