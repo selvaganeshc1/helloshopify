@@ -48,7 +48,9 @@ var myAppJavaScript = function($){
   // $ in this scope references the jQuery object we'll use.
   // Don't use jQuery, or jQuery191, use the dollar sign.
   // Do this and do that, using $.
-  $('body').append('<p>welcome to hello world soluship get the rates here</p><br> <iframe src="https://soluship.com/viewLogon.action"></iframe> ');
+  $('body').append('<p>welcome to hello world soluship get the rates here</p><br>  ');
+  
+  alert("<h1>selvaas</h1>");
 };
 
 /* If jQuery has not yet been loaded or if it has but it's too old for our needs,
