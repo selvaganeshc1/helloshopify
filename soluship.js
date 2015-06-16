@@ -50,7 +50,7 @@ var myAppJavaScript = function($){
   // Do this and do that, using $.
   $('body').append('<p>welcome to hello world soluship get the rates here</p><br>  ');
   
-  alert("<h1>selvaas</h1>");
+  alert("THANKS FOR INSTALLING SOLUSHIP SHOPIFY APP");
 };
 
 /* If jQuery has not yet been loaded or if it has but it's too old for our needs,
