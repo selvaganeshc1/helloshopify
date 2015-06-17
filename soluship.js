@@ -52,7 +52,7 @@ var myAppJavaScript = function($){
   
   alert("THANKS FOR INSTALLING SOLUSHIP SHOPIFY APP");
   
-  $( "#ajaxifyDrawer" ).append( "<p>sachin ramesh tendulkar</p>" );
+  $( 'body' ).append( "<p>sachin ramesh tendulkar</p>" );
   
 };
 
