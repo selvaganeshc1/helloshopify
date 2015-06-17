@@ -51,7 +51,7 @@ var myAppJavaScript = function($){
   $('body').append('<p>welcome to hello world soluship get the rates here VIJAY</p><br>  ');
   
   //alert("THANKS FOR INSTALLING SOLUSHIP SHOPIFY APP");
-  $( 'body' ).appenend("selva");
+  //$( 'body' ).appenend("selva");
  // $( 'body' ).append("<a href='https://shipshop-4.myshopify.com/' onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var v = document.createElement('input'); v.setAttribute('type', 'hidden'); v.setAttribute('name', 'id'); v.setAttribute('value', 'VARIANT-ID'); f.appendChild(v); f.submit(); return false;">BUY NOW</a>");
   
 };
