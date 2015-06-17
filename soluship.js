@@ -52,7 +52,8 @@ var myAppJavaScript = function($){
   
   alert("THANKS FOR INSTALLING SOLUSHIP SHOPIFY APP");
   
-  $( "#ajaxifyCart" ).append( "<p>sachin ramesh tendulkar</p>" );
+  $( "#ajaxifyDrawer" ).append( "<p>sachin ramesh tendulkar</p>" );
+  
 };
 
 /* If jQuery has not yet been loaded or if it has but it's too old for our needs,
