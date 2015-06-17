@@ -50,11 +50,14 @@ var myAppJavaScript = function($){
   // Do this and do that, using $.
   $('body').append('<p>welcome to hello world soluship get the rates here VIJAY</p><br>  ');
   
-  alert("THANKS FOR INSTALLING SOLUSHIP SHOPIFY APP");
+  //alert("THANKS FOR INSTALLING SOLUSHIP SHOPIFY APP");
+  
   //$( 'body' ).appenend("selva");
  // $( 'body' ).append("<a href='https://shipshop-4.myshopify.com/' onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href; var v = document.createElement('input'); v.setAttribute('type', 'hidden'); v.setAttribute('name', 'id'); v.setAttribute('value', 'VARIANT-ID'); f.appendChild(v); f.submit(); return false;">BUY NOW</a>");
   
 };
+
+
 
 /* If jQuery has not yet been loaded or if it has but it's too old for our needs,
 we will load jQuery from the Google CDN, and when it's fully loaded, we will run
@@ -68,5 +71,7 @@ if ((typeof jQuery === 'undefined') || (parseInt(jQuery.fn.jquery) === 1 && pars
 } else {
   myAppJavaScript(jQuery);
 }
-
+function getRatesSholuship(){
+  alert("get Rates");
+}
 })();
