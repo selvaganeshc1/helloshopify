@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+ 
+  <script src="https://cdn.shopify.com/s/assets/external/app.js"></script>
+  <script type="text/javascript">
+   window.top.location.href = '/auth/shopify?shop=shipshop-4';
+    ShopifyApp.init({
+      apiKey: 'a76d9d5646b2eb37a2fdb9e781c1ffdc',
+      shopOrigin: 'http://shipshop-4.myshopify.com/'
+    });
+    ShopifyApp.ready(function(){
+  alert("Ready");
+}); 
+  </script>
+
+ 
+ 
+<script>
+ ShopifyApp.ready(function(){
+    ShopifyApp.Bar.initialize({
+      icon: 'https://test.soluship.com/mmr/images/logo.png',
+      title: 'Solsuhip Shipment',
+      buttons: { 
+        primary: {
+          label: 'Save', 
+          message: 'save', 
+          callback: function(){ 
+            ShopifyApp.Bar.loadingOn();
+            doSomeCustomAction();
+          }
+        }
+      }
+    });
+  });
+function ajaxFunction()
+  {
+  	var xmlHttp;
+  	try
+    {
+    // Firefox, Opera 8.0+, Safari
+    xmlHttp=new XMLHttpRequest();
+    }
+  	catch (e)
+    {
+    // Internet Explorer
+    try
+      {
+      xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+      }
+    catch (e)
+      {
+      try
+        {
+        xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+      catch (e)
+        {
+        alert("Your browser does not support AJAX!");
+        return false;
+        }
+      }
+    }
+	return xmlHttp;
+  }  
+function loadXMLDoc()
+{ 
+var json = JSON.stringify(getRatesRequestJson());
+
+    
+    var xhr = new XMLHttpRequest();
+ 
+  var url1="https://192.168.1.8/ShipLinx/api/v1/genericrates";
+ 
+     $.ajax({
+type: 'post',
+contentType: 'application/json',
+url:url1,
+data: json,
+ username: 'ranger',
+password: 'ranger', 
+success: function(data, textStatus, jqXHR){ alert('Stock updated successfully. Status: '+JSON.stringify(data)); },
+error: function(jqXHR, textStatus, errorThrown){ alert('update Stock error: ' + textStatus); }
+ 
+});
+
+  //  xhr.send(json);
+   
+ 
+}
+
+ 
+
+ 
+
+ 
+ 
+
+        function getRatesRequestJson(){
+      
+          var o = {
+        orders:{
+
+          packages: [
+              {
+
+                  packageId:1,
+                  description: "",
+                  length: 1,
+                  height: 1,
+                  weight: 1,
+                  width: 1,
+                  insuranceAmount: 0,
+                  codAmount: 0,
+                  type: "-1",
+                  orderId: 0,
+              }
+          ],
+          toAddress: {
+              addressId: 97445,
+              abbreviationName: "Testori Interiors Inc",
+              address1: "107 Lawrence Paqueette Ind. Dr.",
+              address2: "unit 35",
+              city: "LOS ANGELES",
+              brokerCode: "CN",
+              honeNo: "5182984400",
+              faxNo: "",
+              emailAddress: "",
+              contactName: "Gary Cole",
+              countryId: 0,
+              postalCode: "90001",
+              residential: false,
+              countryCode: "US",
+              provinceCode: "NY",
+              customerId: 0,
+              defaultFromAddress: false,
+              defaultToAddress: false,
+              distributionName: "",
+              sendNotification: false,
+              taxId: "",
+              zipCodeRequired: false
+          },
+           
+          appointmentPickup: false,
+          appointmentDelivery: false,
+          scheduledShipDate_web: "2015-06-10",
+          paymentRequired: false,
+          saveToAddress: false,
+          saveFromAddress: false,
+          referenceValue: "",
+          unitmeasure: 1,
+          carrierId_web: -1,
+          serviceId_web: -1,
+          webCustomerId: 4161,
+          quickShipRequired: false,
+          fastestMethod: false,
+          cheapestMethod: false,
+          billToType: "Soluship Acct",
+          previouslyBilled: 0,
+          addChargeFromAdmin: false,
+          saveShipmet: 0,
+          customsInvoiceId: 0,
+          linkToOrder: 0
+
+      }
+              };  
+return o;
+
+}
+
+
+
+/*
+
+$(document).ready(function(){
+    //attach a jQuery live event to the button
+    $('#getdata-button').live('click', function(){
+      alert("sss");
+        
+    });
+});*/
+</script>
+</head>
+<body>
+
+<div id="myDiv"><h2>Let AJAX change this text</h2></div>
+<button type="button" id="getdata-button" onclick="loadXMLDoc()">Change Content</button>
+<a href="#" id="getdata-button">Get JSON Data</a>
+</body>
+</html>
